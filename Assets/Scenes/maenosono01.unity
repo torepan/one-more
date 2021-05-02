@@ -250,6 +250,8 @@ MonoBehaviour:
   RandomUpper_X: 1
   RandomLower_Z: -9
   RandomUpper_Z: -7
+  RandomLower_Number: 1
+  RandomUpper_Number: 3
 --- !u!4 &653444473
 Transform:
   m_ObjectHideFlags: 0

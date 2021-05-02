@@ -14,12 +14,26 @@ public class PillarSpawnScript : MonoBehaviour
     [SerializeField] float RandomLower_Z=1.0f;
     //茎のz座標のランダム範囲の上限
     [SerializeField] float RandomUpper_Z=9.0f;
+    //茎の本数のランダム範囲の下限
+    [SerializeField]　int RandomLower_Number=1;
+    //茎の本数のランダム範囲の上限
+    [SerializeField]　int RandomUpper_Number=3;
+
     
     
     void Start()
     {
+        //茎の本数をランダムで決める
+        int n=Random.Range(RandomLower_Number,RandomUpper_Number+1); 
+        //countのC
+        int c=0;
+        //ランダムで決めた本数分配置
+        while(c<n){
         //ランダムに茎を配置
         CreatePillar();
+        c=c+1;
+        }
+        Debug.Log(n);
     }
     //ランダムに茎を配置するメソッド
     //配置する詳細の設定はまだしていない
@@ -36,6 +50,6 @@ public class PillarSpawnScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
