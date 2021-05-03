@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TimeScript : MonoBehaviour
+public class TimerScript : MonoBehaviour
 {
     
     public float countdown = 5.0f;
@@ -18,7 +18,7 @@ public class TimeScript : MonoBehaviour
         countdown -= Time.deltaTime;
 
         
-        timeText.text = countdown.ToString("f1") + "seconds";
+        timeText.text = countdown.ToString("f1") + "•b";
 
         
         if (countdown <= 0)
