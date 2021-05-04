@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/nakazawascene.unity
+    guid: 3d0134848aa94b9408df9c7d3ec6035e
+  - enabled: 1
+    path: Assets/Scenes/Resultscene.unity
+    guid: e794bd43885462a41942004e2b53c20f
   m_configObjects: {}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class TimerScript : MonoBehaviour
         
         if (countdown <= 0)
         {
-            timeText.text = "Time Up";
+            SceneManager.LoadScene("ResultScene");
         }
     }
 }

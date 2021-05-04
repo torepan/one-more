@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class PlayerScoreScript : MonoBehaviour
+public class returnScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -12,9 +11,14 @@ public class PlayerScoreScript : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+// Update is called once per frame
+void Update()
+{
+    if (Input.GetKey(KeyCode.S))
     {
-        
+        SceneManager.LoadScene("NakazawaScene");
     }
 }
+
+}
+
