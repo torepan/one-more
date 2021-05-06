@@ -23,6 +23,21 @@ public class PillarSpawnScript : MonoBehaviour
     
     void Start()
     {
+        RandomPillar();
+    }
+    //ランダムに茎を配置するメソッド
+    //配置する詳細の設定はまだしていない
+    private void CreatePillar(){
+        //茎のx座標をランダムで決める
+        float Px =  Random.Range(RandomLower_X,RandomUpper_X);
+        //茎のz座標をランダムで決める
+        float Pz =  Random.Range(RandomLower_Z,RandomUpper_Z);
+        GameObject PillarPlacement=Instantiate(PrefabPillar);
+        //茎をランダムな位置に配置
+        PillarPlacement.transform.position=new Vector3(Px,1.09f,Pz);
+        }
+
+     private void RandomPillar(){
         //茎の本数をランダムで決める
         int n=Random.Range(RandomLower_Number,RandomUpper_Number+1); 
         //countのC
@@ -35,18 +50,6 @@ public class PillarSpawnScript : MonoBehaviour
         }
         Debug.Log(n);
     }
-    //ランダムに茎を配置するメソッド
-    //配置する詳細の設定はまだしていない
-    private void CreatePillar(){
-        //茎のx座標をランダムで決める
-        float x =  Random.Range(RandomLower_X,RandomUpper_X);
-        //茎のz座標をランダムで決める
-        float z =  Random.Range(RandomLower_Z,RandomUpper_Z);
-        GameObject PillarPlacement=Instantiate(PrefabPillar);
-        //茎をランダムな位置に配置
-        PillarPlacement.transform.position=new Vector3(x,1.09f,z);
-        }
-
     // Update is called once per frame
     void Update()
     {
