@@ -461,6 +461,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoom: 0.1
   zoom_dec: 0.1
+  PillarObject: {fileID: 7613083987450284003, guid: 5bb1631e7f7fea142bca51691a4e1d95,
+    type: 3}
+  RandomLower_X: -5
+  RandomUpper_X: 4.75
+  RandomLower_Z: -3.36
+  RandomUpper_Z: -3.36
+  RandomLower_Number: 1
+  RandomUpper_Number: 3
 --- !u!1 &923927205
 GameObject:
   m_ObjectHideFlags: 0
