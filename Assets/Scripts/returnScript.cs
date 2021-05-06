@@ -16,7 +16,7 @@ void Update()
 {
     if (Input.GetKey(KeyCode.S))
     {
-        SceneManager.LoadScene("NakazawaScene");
+        SceneManager.LoadScene("PlayStage");
     }
 }
 
