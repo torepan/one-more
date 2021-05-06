@@ -44,7 +44,7 @@ public class PillarSpawnScript : MonoBehaviour
         float z =  Random.Range(RandomLower_Z,RandomUpper_Z);
         GameObject PillarPlacement=Instantiate(PrefabPillar);
         //茎をランダムな位置に配置
-        PillarPlacement.transform.position=new Vector3(x,1.44f,z);
+        PillarPlacement.transform.position=new Vector3(x,1.09f,z);
         }
 
     // Update is called once per frame
