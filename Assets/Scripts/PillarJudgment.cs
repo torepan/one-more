@@ -5,7 +5,7 @@ using UnityEngine;
 public class PillarJudgment : MonoBehaviour
 {
     public float zoom = 0.1f; // 初期の敵の表示倍率
-    public float zoom_dec = 0.1f; // 倍率の減少幅
+    public float zoom_dec = 3.0f; // 倍率の減少幅
     [SerializeField]
     GameObject PillarObject;
     [SerializeField]

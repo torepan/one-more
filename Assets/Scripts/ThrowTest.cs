@@ -23,8 +23,8 @@ public class ThrowTest : MonoBehaviour
     {
         if (state == 1)
         {
-            Vector3 tmp = pl.transform.position;
-            Quaternion tmp2 = pl.transform.rotation;
+            Vector3 tmp = GameObject.Find("Player").transform.position;
+            Quaternion tmp2 = GameObject.Find("Player").transform.rotation;
             itemRb.useGravity = false;
             this.transform.position = new Vector3(0f + tmp.x, 2 + tmp.y, 0 + tmp.z);
             this.transform.rotation = tmp2;
