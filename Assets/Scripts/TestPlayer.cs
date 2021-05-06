@@ -38,9 +38,9 @@ public class TestPlayer : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(diff); //Œü‚«‚ğ•ÏX‚·‚é
         }
 
-        if (Input.GetKey(KeyCode.S))
+        /*if (Input.GetKey(KeyCode.S))
         {
             GameObject.GetComponent<ScoreScript>().ScorePlus();
-        }
+        }*/
     }
 }
