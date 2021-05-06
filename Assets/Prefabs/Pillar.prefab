@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 507390149536285998}
   m_Layer: 0
   m_Name: Pillar
-  m_TagString: Untagged
+  m_TagString: TeaPillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 7613083987450284003}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
