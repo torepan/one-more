@@ -8,6 +8,8 @@ public class PillarJudgment : MonoBehaviour
     public float zoom_dec = 0.1f; // 倍率の減少幅
     [SerializeField]
     GameObject PillarObject;
+    [SerializeField]
+    GameObject PillarScore;
 
     [SerializeField] float RandomLower_X=-5.0f;
     //茎のx座標のランダム範囲の上限
@@ -40,6 +42,7 @@ public class PillarJudgment : MonoBehaviour
             Destroy(collision.gameObject);
             zoom += zoom_dec; // 倍率を大きくする
             transform.localScale = new Vector3(2, zoom, 2);
+            PillarScore.GetComponent<ScoreScript>().ScorePlus();
             RandomPillar();
         }
     }
