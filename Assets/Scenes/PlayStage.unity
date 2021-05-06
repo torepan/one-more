@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &24161776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 24161778}
+  - component: {fileID: 24161777}
+  m_Layer: 0
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &24161777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24161776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48cc5fb5f49ad8f4a8bea4eb1cabc106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plus: 100
+--- !u!4 &24161778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24161776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.9160323, y: 3.6637065, z: -10.315661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &53804416
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +507,7 @@ MonoBehaviour:
   zoom_dec: 0.1
   PillarObject: {fileID: 7613083987450284003, guid: 5bb1631e7f7fea142bca51691a4e1d95,
     type: 3}
+  PillarScore: {fileID: 24161776}
   RandomLower_X: -5
   RandomUpper_X: 4.75
   RandomLower_Z: -3.36
@@ -481,8 +526,8 @@ GameObject:
   - component: {fileID: 923927209}
   - component: {fileID: 923927208}
   - component: {fileID: 923927207}
-  - component: {fileID: 923927206}
   - component: {fileID: 923927211}
+  - component: {fileID: 923927206}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -499,9 +544,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 923927205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b7a4c29776439e49a66fcb2b8574366, type: 3}
+  m_Script: {fileID: 11500000, guid: ecc1d2fb74ed5dd47b678d47a9f7637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameObject: {fileID: 24161776}
 --- !u!65 &923927207
 BoxCollider:
   m_ObjectHideFlags: 0
