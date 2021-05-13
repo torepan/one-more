@@ -30,7 +30,7 @@ public class ThrowTest : MonoBehaviour
             this.transform.rotation = tmp2;
             Debug.Log(state);
 
-            if (Input.GetKeyUp(KeyCode.S))
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 Thlow();
             }
@@ -43,7 +43,7 @@ public class ThrowTest : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log(state);
-            if (Input.GetKey(KeyCode.S)&&state == 0)
+            if (Input.GetKey(KeyCode.Space)&&state == 0)
             {
                 state = 1;
             }
